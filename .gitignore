@@ -1,0 +1,91 @@
+# Consulte httphelp.github.comignore-files para obter mais informações sobre como ignorar arquivos.
+
+# saída compilada
+ dist
+ tmp
+ out-tsc
+
+# Dados de tempo de execução
+pids
+ .pid
+ .seed
+ .pid.lock
+
+# Diretório para bibliotecas instrumentadas geradas por jscoverage  JSCover
+lib-cov
+
+# Diretório de cobertura usado por ferramentas como Istambul
+cobertura
+
+# cobertura de teste de nyc
+.nyc_output
+
+# Armazenamento intermediário pesado (httpgruntjs.comcreating-plugins#storing-task-files)
+.grunhido
+
+# Diretório de dependência do Bower (httpsbower.io)
+bower_components
+
+# configuração node-waf
+.lock-wscript
+
+# IDEs e editores
+.idéia
+.projeto
+.classpath
+.c9 
+ .launch
+.settings 
+ .sublime-workspace
+
+# IDE - VSCode
+.vscode  
+! .vscode  settings.json
+! .vscode  tasks.json
+! .vscode  launch.json
+! .vscode  extensions.json
+
+# misc
+.sass-cache
+connect.lock
+tipografias
+
+# Logs
+Histórico
+ .log
+npm-debug.log 
+yarn-debug.log 
+yarn-error.log 
+
+
+# Diretórios de dependência
+node_modules 
+jspm_packages 
+
+# Diretório de cache npm opcional
+.npm
+
+# Cache opcional do eslint
+.eslintcache
+
+# Histórico opcional do REPL
+.node_repl_history
+
+# Saída do 'pacote npm'
+ .tgz
+
+# Arquivo de integridade do fio
+.yarn-integridade
+
+# dotenv arquivo de variáveis ​​de ambiente
+.env
+
+# next.js criar saída
+.Próximo
+
+# Lerna
+lerna-debug.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

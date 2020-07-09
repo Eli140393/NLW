@@ -1,0 +1,57 @@
+{% extends "layout.html"%}
+
+{% set pageId = "page-search-results" %}
+<!-- Hypertext hiper texto Markup Marcações de texto Languagem Linguagem de marcações de texto -->
+
+{% block title %}
+    <title>Resultado da pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+     <main>
+        {% if total > 0 %}
+            <h4>
+                <strong>
+                    {{total}}
+                    pontos
+                </strong>
+                encontrados
+            </h4>
+            <div class="cards">
+
+                {# Estrutura de repitição para nunjucks, jogando os dados no card #}
+                {% for place in places %}
+                    <div class="card">
+                        <img src="{{place.img_Place}}}" alt="{{place.NM_Place}}">
+                        <h1>{{place.NM_Place}}</h1>
+                        <h3>{{place.DS_Items}}</h3>
+                        <p>{{place.DS_State}},
+                            {{place.DS_City}}
+                            <br/>
+                            {{place.DS_Address}}
+                            <br/>
+                            {{place.DS_Address2}}
+                        </p>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        {%else%}
+            <h4>
+                <strong>
+                    Nenhum
+                </strong>
+                Local encontrado
+            </h4>
+
+       {% endif %}
+
+    </main>
+{% endblock content %}
